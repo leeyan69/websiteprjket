@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travis Scott - My Favorite Artist</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        body {
+            background-image: url('images/travis-scott-gq-cover-september-2020-a.jpg');
+            background-size: 100% 42%; /* Cover 100% width and 42% height */
+            background-repeat: no-repeat;
+            background-position: top center; /* Adjust the background position as needed */
+            background-color: #000; /* Fallback color if image is not available */
+            color: #fff;
+            font-family: Arial, sans-serif; /* Ensure readable font */
+            margin: 0;
+            padding: 0;
+        }
+        .header, .body, .footer, .content, .sidebar, .album, .connect {
+            /* Your existing styles for these elements */
+        }
+        .welcome-message {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #4B0082; /* Darker purple (#4B0082) */
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .about-container {
+            max-width: 800px;
+            margin: 100px auto; /* Centering the content */
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        .about-content {
+            margin-top: 20px;
+        }
+        .about-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ccc; /* Change purple color to a lighter shade of gray */
+        }
+        .sidebar {
+            float: center;
+            width: 30%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .sidebar h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .album {
+            margin-top: 20px;
+        }
+        .album h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .album img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .connect {
+            margin-top: 20px;
+        }
+        .connect h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .connect a {
+            display: block;
+            margin-bottom: 10px;
+            color: #ccc;
+            text-decoration: none;
+        }
+        #footer {
+            clear: both;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        #footer p {
+            font-size: 14px;
+            color: #4B0082; /* Darker purple (#4B0082) */
+        }
+        .opinion-box {
+            position: absolute;
+            top: 70px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 250px;
+        }
+        .opinion-box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .opinion-box select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .opinion-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4B0082;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function submitOpinion() {
+            var album = document.getElementById('favorite-album').value;
+            alert('Thank you for your opinion! Your favorite album is: ' + album);
+        }
+    </script>
+</head>
+<body>
+    <div class="welcome-message">
+        Welcome to my Fan Page
+    </div>
+    <div class="opinion-box">
+        <h3>What's your favorite Travis Scott album?</h3>
+        <select id="favorite-album">
+            <option value="Birds in the Trap Sing McKnight">Birds in the Trap Sing McKnight</option>
+            <option value="Astroworld">Astroworld</option>
+            <option value="Rodeo">Rodeo</option>
+            <option value="Days Before Rodeo">Days Before Rodeo</option>
+            <option value="Other">Other</option>
+        </select>
+        <button onclick="submitOpinion()">Submit</button>
+    </div>
+    <div id="header">
+        <div class="header">
+            <ul>
+                <li>
+                    <a href="index.html">Project 2024</a>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <a href="index.html" class="logo"><img src="images/d1c8064a119415f88bc67ad7c574dddc-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="footer">
+            <p>
+                If it makes you happy, it doesn’t have to make sense to others.
+                <br>
+                <br>
+                -Travis Scott
+            </p>
+        </div>
+    </div>
+    <div id="body" class="about-container">
+        <div class="about-content">
+            <h2>About Travis Scott</h2>
+            <p>
+                Travis Scott, originally Jacques Berman Webster II, is an American rapper, singer, and producer. Born on April 30, 1992, in Houston, Texas, he gained recognition for his unique style blending hip hop, rock, and electronic music influences.
+            </p>
+            <p>
+                Scott's latest album, <strong>"Utopia"</strong>, released in 2023, showcases his evolution as an artist, featuring collaborations with top musicians and exploring themes of fame, ambition, and personal growth.
+            </p>
+            <p>
+                Join us in celebrating Travis Scott's journey through music and creativity. Feel free to explore more about his discography, upcoming shows, and connect with fellow fans.
+            </p>
+        </div>
+        <div class="sidebar">
+            <div>
+                <h3>Shows</h3>
+                <ul>
+                    <li>
+                        <a href="shows.html">June 12, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<b>The Wercheshtire, UK 0900</b></a>
+                    </li>
+                    <li>
+                        <a href="shows.html">Januray 2, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<b>Houston, TX 1200</b></a>
+                    </li>
+                    <li>
+                        <a href="shows.html">August 13, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<b>Warsaw, PL 1900</b></a>
+                    </li>
+                    <li>
+                        <a href="shows.html">July 19, 2023&nbsp;&nbsp;-&nbsp;&nbsp;<b>Tokyo, JP 2200</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="album">
+                <h3>Album</h3>
+                <a href="#"><img src="images/e713dca473d268017a1bee708217ee98.1000x1000x1.jpg" alt=""></a> <span>Latest Album 2024 - Utopia</span>
+            </div>
+            <div class="connect">
+                <h3>Social</h3>
+                <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">Google Plus</a>
+                <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">Facebook</a>
+                <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            23229511 ALI SYED ALIYAN
+            <br>
+            <br>
+            <a href="index.html">23229511 ALI SYED ALIYAN</a>
+        </p>
+    </div>
+</body>
+</html>
